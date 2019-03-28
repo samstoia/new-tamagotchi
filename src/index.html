@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tamagotchi</title>
+  </head>
+  <body>
+
+    <div id="openingForm" class="container center">
+      <h2>Tamagotchi Madness</h2>
+      <h4>All the pressures of parenting with none of the consequences!</h4>
+      <form id="gameStartForm">
+        Select your Tamagotchi's Name:
+        <br>
+        <input type="text" name="" id="inputName" required>
+        <br>
+        <button type="submit">Create your Tamagotchi</button>
+      </form>
+      <img id="showGif" src="">
+    </div>
+
+    <div id="gameStart" class="container center">
+      <p>Make sure to take care of <b><span class="tamagotchiName"></span></b>.
+      If it goes without food or sleep too long, it could DIE!</p>
+      <h5>Start Game?</h5>
+      <button id="gameStartButton">Start!</button>
+    </div>
+
+    <div id="tamagotchiHome" class="container center">
+      <h3 class="tamagotchiName"></h3>
+      <div class="row displayRow">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+          <div class="mainDisplay">
+            <img id="backgroundImage" alt="picture of a chicken/tamagotchi">
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+      <h5>Hunger: <span id='tamagotchiHunger'></span></h5>
+      <h5>Tiredness: <span id='tamagotchiTiredness'></span></h5>
+      <h5>Uncleaned <img class="pooEmoji" src="https://bit.ly/2y3AnrF" alt="poop emoji"><span id="tamagotchiPoops"></span></h5>
+      <h5><span id="cantDo"></span></h5>
+
+      <div id="buttonContainer">
+        <button type="button" id="feedSnack">Feed <span class="tamagotchiName"></span> a Snack</button>
+        <button type="button" id="feedMeal">Feed <span class="tamagotchiName"></span> a Meal</button>
+        <button type="button" id="sleepButton">Make <span class ="tamagotchiName"></span> Sleep</button>
+        <button type="button" id="cleanPoops">Clean Poops</button>
+      </div>
+
+      <div class="row sickRow">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+          <div class="tamagotchiSickness">
+            <h5><span class="tamagotchiName"></span> is Sick!  You can give it medicine, but that will only heal it temporarily if it isn't well cared for!</h5>
+            <button type="button" id="medicineButton">Give Medicine!</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row deadRow">
+        <h3 id="isDead"></h3>
+      </div>
+    </div>
+
+
+  </body>
+</html>

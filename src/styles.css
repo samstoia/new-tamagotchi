@@ -1,0 +1,36 @@
+#gameStart, #tamagotchiHome, #buttonContainer, #cantDo, #sleepButton {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.displayRow {
+  height: 600px;
+}
+
+.mainDisplay{
+  height: 100%;
+  border: 1px solid black;
+}
+
+.pooEmoji {
+  height: 20px;
+  width: 20px;
+  bottom: 4px;
+  position: relative;
+  margin-right:5px;
+}
+
+.sickRow {
+  display: none;
+  margin-top: 20px;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+#backgroundImage {
+  height: 598px;
+  width: 100%;
+}
